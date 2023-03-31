@@ -188,8 +188,10 @@ input::-webkit-inner-spin-button {
     margin-top: 35px;
     letter-spacing: 3px;
     width: 100%;
-    text-align: start;
+    display: flex;
+    justify-content: center;
 }
+
 
 .card-bottom{
     display: flex;

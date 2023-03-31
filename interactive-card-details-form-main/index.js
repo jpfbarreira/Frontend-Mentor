@@ -59,30 +59,31 @@ cardCvc.addEventListener('keyup', () => {
 
 confirmBtn.addEventListener('click', (e) => {
     e.preventDefault()
-    if(cardHolderName.value != '' && cardNumber.value != '' && cardCvc.value != ''
-    && cardMonth.value != '' && cardYear.value != ''){
+    if(cardHolderName.value != '' && cardNumber.value.length == 19 && cardCvc.value.length == 3
+    && cardMonth.value.length == 2 &&  cardYear.value.length == 2){
         form.style.display = 'none'
         confirmContainer.style.display = 'flex'
+        console.log(cardCvc.value.length)
     } else {
-        if(cardHolderName.length != 0){
+        if(cardHolderName.value.length == 0){
             errorName.style.visibility = 'visible'
         }else{
             errorName.style.visibility = 'hidden'
         }
-        if (cardNumber.length != 19){
-            errorNumber.style.visibility = 'visible'
-        }else{
+        if (cardNumber.value.length == 19){
             errorNumber.style.visibility = 'hidden'
-        }
-        if(cardCvc.length != 3){
-            errorCVC.style.visibility = 'visible'
         }else{
+            errorNumber.style.visibility = 'visible'
+        }
+        if(cardCvc.value.length == 3){
             errorCVC.style.visibility = 'hidden'
-        }
-        if (cardMonth.length != 2 || cardYear.length != 2) {
-            errorDate.style.visibility = 'visible'
         }else{
+            errorCVC.style.visibility = 'visible'
+        }
+        if (cardMonth.value.length == 2 || cardYear.value.length == 2) {
             errorDate.style.visibility = 'hidden'
+        }else{
+            errorDate.style.visibility = 'visible'
         }
         
     }
