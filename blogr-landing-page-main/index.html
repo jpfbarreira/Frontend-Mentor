@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Blogr]</title>
+
+</head>
+
+<body>
+  <header>
+    <div class="background-svg">
+      <nav>
+        <img src="./images/logo.svg" alt="Blogr">
+        <span class="hamburger-icon" onclick="openNav()">&#9776;</span>
+        <div id="myNav" class="overlay">
+          <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+          <div class="overlay-content">
+            <div class="menu">
+              <div class="dropdown">
+                <button class="dropdown-btn">Product <img class="arrow-down" src="./images/icon-arrow-dark.svg"
+                    alt=""></button>
+                <div class="dropdown-content" id="dropdown-1">
+                  <a href="">Overview</a>
+                  <a href="">Pricing</a>
+                  <a href="">Marketplace</a>
+                  <a href="">Features</a>
+                  <a href="">Integrations</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropdown-btn">Company <img class="arrow-down" src="./images/icon-arrow-dark.svg"
+                    alt=""></i></button>
+                <div class="dropdown-content" id="dropdown-2">
+                  <a href="">About</a>
+                  <a href="">Team</a>
+                  <a href="">Blog</a>
+                  <a href="">Careers</a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropdown-btn">Connect <img class="arrow-down" src="./images/icon-arrow-dark.svg"
+                    alt=""></i></button>
+                <div class="dropdown-content" id="dropdown-3">
+                  <a href="">Contact</a>
+                  <a href="">Newsletter</a>
+                  <a href="">LinkedIn</a>
+                </div>
+              </div>
+              <hr>
+              <div class="nav-right">
+                <button class="login-btn">Login</button>
+                <button class="sign-up-btn">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-nav">
+          <div class="desktop-menu">
+            <div class="desktop-menu-container">
+              <div class="desktop-dropdown">
+                <button class="dropdown-btn">Product <div class="arrow-down"></div></button>
+                <div class="dropdown-content" id="dropdown-4">
+                  <a href="">Overview</a>
+                  <a href="">Pricing</a>
+                  <a href="">Marketplace</a>
+                  <a href="">Features</a>
+                  <a href="">Integrations</a>
+                </div>
+              </div>
+              <div class="desktop-dropdown">
+                <button class="dropdown-btn">Company <div class="arrow-down"></div></button>
+                <div class="dropdown-content" id="dropdown-5">
+                  <a href="">About</a>
+                  <a href="">Team</a>
+                  <a href="">Blog</a>
+                  <a href="">Careers</a>
+                </div>
+              </div>
+              <div class="desktop-dropdown">
+                <button class="dropdown-btn">Connect <div class="arrow-down"></div></button>
+                <div class="dropdown-content" id="dropdown-6">
+                  <a href="">Contact</a>
+                  <a href="">Newsletter</a>
+                  <a href="">LinkedIn</a>
+                </div>
+              </div>
+            </div>           
+            <div class="desktop-nav-right">
+              <button class="login-btn">Login</button>
+              <button class="sign-up-btn">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <h1>A modern publishing platform</h1>
+        <h4>Grow your audience and build your online brand</h4>
+        <div>
+          <button class="start-for-free-btn">Start for Free</button>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </section>
+    </div>
+  </header>
+  <section class="bottom-container">
+    <h1 class="bottom-container-title">Designed for the future</h1>
+    <div class="svg-graph"></div>
+    <div class="bottom-container-content">
+      <div class="bottom-container-section1">
+        <h1> Introducing an extensible editor</h1>
+        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+          change the looks of a blog.
+        </p>
+        <h1>Robust content management</h1>
+        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+    </div>
+    <div class="bottom-container-section2">
+      <div class="bottom-container-section2-content">
+        <h1>State of the Art Infrastructure</h1>
+        <p>
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+        </p>
+      </div>
+      <div class="phones-illustration"></div>
+    </div>
+    
+    <div class="bottom-container-section3">
+      <div alt="laptop" class="laptop-illustration"></div>
+      <div class="bottom-container-section3-content">
+        <h1>Free, open, simple</h1>
+        <p>
+          Blogr is a free and open source application backed by a large community of helpful developers. It supports
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+        </p>
+        <h1>Powerful tooling</h1>
+        <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+          breeze,
+          but capable of producing even the most complicated sites.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <h1>Blogr</h1>
+      <div class="footer-content">
+        <div>
+          <h3>Product</h3>
+          <ul>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">João Barreira</a>.
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
